@@ -99,22 +99,22 @@
   design: cool;
 }
 
-.c-card {
+.card {
   --flow-space: 1.25rem;
 }
 
-.c-card__thumb {
+.card__thumb {
   flex: 0 0 30%;
 }
-.c-card__thumb img {
+.card__thumb img {
   width: 100%;
 }
 
-.c-card__content {
+.card__content {
   --flow-space: 0.25rem;
 }
 
-.c-card__title {
+.card__title {
   font-weight: bold;
   font-size: 17px;
   color: #4c4e4d;
@@ -126,84 +126,84 @@
   font-size: 14px;
 }
 
-.c-card__meta {
+.card__meta {
   font-size: 14px;
   color: #666;
 }
-.c-card__meta a {
+.card__meta a {
   color: #4f7177;
   text-decoration: none;
 }
 
 @container main (min-width: 1px) {
-  .c-card__meta {
+  .card__meta {
     font-family: 'Playfair Display', serif;
   }
 }
 @container card (min-width: 280px) and style(--horizontal: true) {
-  .c-card {
+  .card {
     display: flex;
     gap: 1rem;
   }
 }
 @container main (min-width: 550px) {
   @container card style(--flipped: true) {
-    .c-card__thumb {
+    .card__thumb {
       order: 2;
     }
   }
 }
 @container style(--thumb: mobile-only) {
-  .c-card__thumb {
+  .card__thumb {
     display: none;
   }
 }
 @media (min-width: 550px) {
   @container style(--thumb: grid-2) {
-    .c-card__thumb {
+    .card__thumb {
       display: none;
     }
   }
 }
 @media (min-width: 880px) {
   @container style(--thumb: grid-2) {
-    .c-card__thumb {
+    .card__thumb {
       display: block;
     }
   }
 }
 @container card (min-width: 280px) and style(--horizontal: true) and style(--thumb: mobile-only) {
-  .c-card__thumb {
+  .card__thumb {
     display: block;
   }
 }
 @container style(--featured: true) {
-  .c-card {
+  .card {
     display: flex;
     gap: 1rem;
   }
 
-  .c-card__thumb {
+  .card__thumb {
     flex: 0 0 50%;
   }
 }
 /* Cool things... */
 @container main (min-width: 550px) {
   @container card style(--featured: true) {
-    .c-card {
+    .card {
       flex-direction: column;
       gap: 0;
     }
 
-    .c-card__title {
+    .card__title {
       font-size: clamp(1rem, 6cqw, 2rem);
     }
 
-    .c-card__content {
+    .card__content {
       text-align: center;
     }
 
-    .c-card__tease {
+    .card__tease {
       font-family: 'Playfair Display', serif;
       font-size: 19px;
     }
@@ -211,7 +211,7 @@
 }
 @container main (min-width: 550px) {
   @container card style(--compact: 2) {
-    .c-card__title {
+    .card__title {
       font-size: 19px;
     }
   }

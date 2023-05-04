@@ -10,14 +10,14 @@ export interface ArticleData {
 </script>
 <template>
   <div class="article__item" :style="style">
-    <article class="c-card u-flow">
-      <div class="c-card__thumb">
+    <article class="card u-flow">
+      <div class="card__thumb">
         <img :src="data.thumbnail" alt="" />
       </div>
-      <div class="c-card__content u-flow">
-        <h3 class="c-card__title">{{ data.title }}</h3>
-        <p class="c-card__tease">{{ data.teaser }}</p>
-        <p class="c-card__meta">
+      <div class="card__content u-flow">
+        <h3 class="card__title">{{ data.title }}</h3>
+        <p class="card__tease">{{ data.teaser }}</p>
+        <p class="card__meta">
           By <a href="#">{{ data.author }}</a>
         </p>
       </div>
