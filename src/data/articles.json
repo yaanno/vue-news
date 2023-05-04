@@ -1,0 +1,81 @@
+[
+  {
+    "thumbnail": "https://placehold.co/300x225",
+    "title": "Savory Italian Pasta Dishes",
+    "teaser": "Discover the best pasta recipes for your next dinner party.",
+    "author": "Jason Cook",
+    "featured": false,
+    "column": 2,
+    "style": {
+      "horizontal": true
+    }
+  },
+  {
+    "thumbnail": "https://placehold.co/300x225",
+    "title": "Savory Italian Pasta Dishes",
+    "teaser": "Discover the best pasta recipes for your next dinner party.",
+    "author": "Jason Cook",
+    "featured": false,
+    "column": 2,
+    "style": {
+      "horizontal": true,
+      "thumb": "mobile-only"
+    }
+  },
+  {
+    "thumbnail": "https://placehold.co/620x370",
+    "title": "Savory Italian Pasta Dishes",
+    "teaser": "Discover the best pasta recipes for your next dinner party.",
+    "author": "Jason Cook",
+    "featured": true,
+    "column": 1
+  },
+  {
+    "thumbnail": "https://placehold.co/300x225",
+    "title": "Savory Italian Pasta Dishes",
+    "teaser": "Discover the best pasta recipes for your next dinner party.",
+    "author": "Jason Cook",
+    "featured": false,
+    "column": 1,
+    "style": {
+      "flipped": true,
+      "horizontal": true
+    }
+  },
+  {
+    "thumbnail": "https://placehold.co/300x225",
+    "title": "Savory Italian Pasta Dishes",
+    "teaser": "Discover the best pasta recipes for your next dinner party.",
+    "author": "Jason Cook",
+    "featured": false,
+    "column": 3,
+    "style": {
+      "horizontal": true,
+      "thumb": "grid-2"
+    }
+  },
+  {
+    "thumbnail": "https://placehold.co/300x225",
+    "title": "Savory Italian Pasta Dishes",
+    "teaser": "Discover the best pasta recipes for your next dinner party.",
+    "author": "Jason Cook",
+    "featured": false,
+    "column": 3,
+    "style": {
+      "horizontal": true,
+      "thumb": "mobile-only"
+    }
+  },
+  {
+    "thumbnail": "https://placehold.co/300x225",
+    "title": "Savory Italian Pasta Dishes",
+    "teaser": "Discover the best pasta recipes for your next dinner party.",
+    "author": "Jason Cook",
+    "featured": false,
+    "column": 3,
+    "style": {
+      "horizontal": true,
+      "thumb": "mobile-only"
+    }
+  }
+]

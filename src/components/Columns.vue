@@ -1,25 +1,36 @@
 <script setup lang="ts">
 import Article, { type ArticleData } from './Article.vue'
 import ColumnItem from './ColumnItem.vue'
-const data: ArticleData = {
-  title: 'Savory Italian Pasta Dishes',
-  teaser: 'Discover the best pasta recipes for your next dinner party.',
-  meta: 'Ahmad Shadeed'
-}
+import articles from '@/data/articles.json'
+
+const featuredColumnArticles = articles.filter((article) => article.column === 1)
+const leftColumnArticles = articles.filter((article) => article.column === 2)
+const rightColumnArticles = articles.filter((article) => article.column === 3)
 </script>
 <template>
   <ColumnItem>
-    <Article :data="data" style="--featured: true" />
-    <Article :data="data" style="--horizontal: true; --flipped: true" />
+    <Article
+      v-for="article in featuredColumnArticles"
+      :data="article"
+      :style="`--featured: ${article.featured}; --horizontal: ${article.style?.horizontal}; --flipped: ${article.style?.flipped}`"
+    />
   </ColumnItem>
   <ColumnItem>
-    <Article :data="data" style="--compact: 2; --horizontal: true" />
-    <Article :data="data" style="--horizontal: true; --thumb: mobile-only" />
-    <Article :data="data" style="--horizontal: true; --thumb: mobile-only" />
+    <Article
+      v-for="(article, index) in leftColumnArticles"
+      :data="article"
+      :style="`${index < 1 ? '--compact: 2' : ''}; --horizontal: ${
+        article.style?.horizontal
+      }; --thumb:${article.style?.thumb};`"
+    />
   </ColumnItem>
   <ColumnItem>
-    <Article :data="data" style="--compact: 2; --horizontal: true; --thumb: grid-2" />
-    <Article :data="data" style="--horizontal: true; --thumb: mobile-only" />
-    <Article :data="data" style="--horizontal: true; --thumb: mobile-only" />
+    <Article
+      v-for="(article, index) in rightColumnArticles"
+      :data="article"
+      :style="`${index < 1 ? '--compact: 2' : ''}; --horizontal: ${
+        article.style?.horizontal
+      }; --thumb: ${article.style?.thumb}`"
+    />
   </ColumnItem>
 </template>
