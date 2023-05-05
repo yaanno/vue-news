@@ -1,10 +1,16 @@
 [
-	{
-		"name": "Jason Cook",
-		"thumbnail": "https://placehold.co/200x200",
-		"summary": "International topics, Mapsplaining.",
-		"contact": [
-			{"email": "jason.cook@media.site"}
-		]
-	}
+  {
+    "id": 2,
+    "name": "Jason Cook",
+    "thumbnail": "https://placehold.co/200x200",
+    "summary": "International topics, Mapsplaining.",
+    "contact": { "email": "jason.cook@media.site" }
+  },
+  {
+    "id": 1,
+    "name": "Mason Hook",
+    "thumbnail": "https://placehold.co/200x200",
+    "summary": "Slighshots, gun politics, gender bender.",
+    "contact": { "email": "mason.hook@media.site" }
+  }
 ]

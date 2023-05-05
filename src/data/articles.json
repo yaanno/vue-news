@@ -1,10 +1,13 @@
 [
   {
     "thumbnail": "https://placehold.co/300x225",
-    "title": "Savory Italian Pasta Dishes",
+    "title": "Slasher Italian Pasta Dishes",
     "teaser": "Discover the best pasta recipes for your next dinner party.",
-    "author": "Jason Cook",
-    "slug": "savory-italian-pasta-dishes",
+    "author": {
+      "name": "Jason Cook",
+      "id": 2
+    },
+    "slug": "slasher-italian-pasta-dishes",
     "featured": false,
     "column": 2,
     "style": {
@@ -13,10 +16,13 @@
   },
   {
     "thumbnail": "https://placehold.co/300x225",
-    "title": "Savory Italian Pasta Dishes",
+    "title": "Italian Noodle Dishes",
     "teaser": "Discover the best pasta recipes for your next dinner party.",
-    "author": "Jason Cook",
-    "slug": "savory-italian-pasta-dishes",
+    "author": {
+      "name": "Mason Hook",
+      "id": 1
+    },
+    "slug": "italian-noodle-dishes",
     "featured": false,
     "column": 2,
     "style": {
@@ -26,19 +32,25 @@
   },
   {
     "thumbnail": "https://placehold.co/620x370",
-    "title": "Savory Italian Pasta Dishes",
+    "title": "Chinese Pasta Dishes",
     "teaser": "Discover the best pasta recipes for your next dinner party.",
-    "author": "Jason Cook",
-    "slug": "savory-italian-pasta-dishes",
+    "author": {
+      "name": "Mason Hook",
+      "id": 1
+    },
+    "slug": "chinese-pasta-dishes",
     "featured": true,
     "column": 1
   },
   {
     "thumbnail": "https://placehold.co/300x225",
-    "title": "Savory Italian Pasta Dishes",
+    "title": "Roasted Meat Dishes",
     "teaser": "Discover the best pasta recipes for your next dinner party.",
-    "author": "Jason Cook",
-    "slug": "savory-italian-pasta-dishes",
+    "author": {
+      "name": "Mason Hook",
+      "id": 1
+    },
+    "slug": "roasted-meat-dishes",
     "featured": false,
     "column": 1,
     "style": {
@@ -48,10 +60,13 @@
   },
   {
     "thumbnail": "https://placehold.co/300x225",
-    "title": "Savory Italian Pasta Dishes",
+    "title": "Serbian Dishes",
     "teaser": "Discover the best pasta recipes for your next dinner party.",
-    "author": "Jason Cook",
-    "slug": "savory-italian-pasta-dishes",
+    "author": {
+      "name": "Mason Hook",
+      "id": 1
+    },
+    "slug": "serbian-dishes",
     "featured": false,
     "column": 3,
     "style": {
@@ -61,10 +76,13 @@
   },
   {
     "thumbnail": "https://placehold.co/300x225",
-    "title": "Savory Italian Pasta Dishes",
+    "title": "Savory Pasta Dishes",
     "teaser": "Discover the best pasta recipes for your next dinner party.",
-    "author": "Jason Cook",
-    "slug": "savory-italian-pasta-dishes",
+    "author": {
+      "name": "Mason Hook",
+      "id": 1
+    },
+    "slug": "savory-pasta-dishes",
     "featured": false,
     "column": 3,
     "style": {
@@ -74,10 +92,13 @@
   },
   {
     "thumbnail": "https://placehold.co/300x225",
-    "title": "Savory Italian Pasta Dishes",
+    "title": "Italian Pasta Dishes",
     "teaser": "Discover the best pasta recipes for your next dinner party.",
-    "author": "Jason Cook",
-    "slug": "savory-italian-pasta-dishes",
+    "author": {
+      "name": "Jason Cook",
+      "id": 2
+    },
+    "slug": "italian-pasta-dishes",
     "featured": false,
     "column": 3,
     "style": {

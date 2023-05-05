@@ -9,6 +9,8 @@
 }
 
 .columns {
+  container-name: page;
+  container-type: inline-size;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -135,11 +137,6 @@
   text-decoration: none;
 }
 
-@container main (min-width: 1px) {
-  .card__meta {
-    font-family: 'Playfair Display', serif;
-  }
-}
 @container card (min-width: 280px) and style(--horizontal: true) {
   .card {
     display: flex;
@@ -204,7 +201,6 @@
     }
 
     .card__tease {
-      font-family: 'Playfair Display', serif;
       font-size: 19px;
     }
   }
