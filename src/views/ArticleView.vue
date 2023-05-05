@@ -11,7 +11,7 @@ const mainArticle = articles.find((article) => article.slug === route.params.slu
 <template>
   <main class="columns" style="--page: article">
     <ColumnItem>
-      <Article :data="mainArticle" style="" />
+      <Article :data="mainArticle" style="" v-if="mainArticle" />
     </ColumnItem>
     <ColumnItem>
       <Article

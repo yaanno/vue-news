@@ -14,6 +14,6 @@ describe('Article', () => {
     })
     expect(wrapper.text()).toContain(articles[0].title)
     expect(wrapper.text()).toContain(articles[0].teaser)
-    expect(wrapper.text()).toContain(articles[0].author)
+    expect(wrapper.text()).toContain(articles[0].author.name)
   })
 })

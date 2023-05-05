@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
+import AuthorView from '@/views/AuthorView.vue'
+import ArticleView from '@/views/ArticleView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,18 +14,12 @@ const router = createRouter({
     {
       path: '/article/:slug',
       name: 'article',
-      // route level code-splitting
-      // this generates a separate chunk for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('@/views/ArticleView.vue')
+      component: ArticleView
     },
     {
       path: '/author/:id',
       name: 'author',
-      // route level code-splitting
-      // this generates a separate chunk for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('@/views/AuthorView.vue')
+      component: AuthorView
     }
   ]
 })

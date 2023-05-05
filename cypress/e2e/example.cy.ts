@@ -3,6 +3,6 @@
 describe('My First Test', () => {
   it('visits the app root url', () => {
     cy.visit('/')
-    cy.contains('article', 'Savory Italian Pasta Dishes')
+    cy.contains('article', 'Slasher Italian Pasta Dishes')
   })
 })
