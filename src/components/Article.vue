@@ -6,6 +6,7 @@ export interface ArticleData {
   title: string
   teaser: string
   author: string
+  slug: string
 }
 </script>
 <template>
@@ -15,10 +16,10 @@ export interface ArticleData {
         <img :src="data.thumbnail" alt="" />
       </div>
       <div class="card__content u-flow">
-        <h3 class="card__title">{{ data.title }}</h3>
+        <h3 class="card__title"><router-link :to="{ name: 'article', params: { slug: data.slug } }">{{ data.title }}</router-link></h3>
         <p class="card__tease">{{ data.teaser }}</p>
         <p class="card__meta">
-          By <a href="#">{{ data.author }}</a>
+          By <router-link :to="{ name: 'author', params: { id: 1 } }">{{ data.author }}</router-link>
         </p>
       </div>
     </article>

@@ -10,9 +10,10 @@ const rightColumnArticles = articles.filter((article) => article.column === 3)
 <template>
   <ColumnItem>
     <Article
-      v-for="article in featuredColumnArticles"
+      v-for="(article, index) in featuredColumnArticles"
       :data="article"
       :style="`--featured: ${article.featured}; --horizontal: ${article.style?.horizontal}; --flipped: ${article.style?.flipped}`"
+      :key="`${article.slug}-${index}`"
     />
   </ColumnItem>
   <ColumnItem>
@@ -22,6 +23,7 @@ const rightColumnArticles = articles.filter((article) => article.column === 3)
       :style="`${index < 1 ? '--compact: 2' : ''}; --horizontal: ${
         article.style?.horizontal
       }; --thumb:${article.style?.thumb};`"
+      :key="`${article.slug}-${index}`"
     />
   </ColumnItem>
   <ColumnItem>
@@ -31,6 +33,7 @@ const rightColumnArticles = articles.filter((article) => article.column === 3)
       :style="`${index < 1 ? '--compact: 2' : ''}; --horizontal: ${
         article.style?.horizontal
       }; --thumb: ${article.style?.thumb}`"
+      :key="`${article.slug}-${index}`"
     />
   </ColumnItem>
 </template>
