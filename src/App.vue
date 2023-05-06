@@ -6,7 +6,9 @@ import FooterNav from './components/FooterNav.vue'
 
 <template>
   <TopNav />
-  <RouterView />
+  <div class="wrap">
+    <RouterView />
+  </div>
   <FooterNav />
 </template>
 

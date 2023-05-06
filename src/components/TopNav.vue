@@ -17,17 +17,17 @@
 </template>
 <style>
 .top-navigation {
+  background: var(--color-background-soft);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 2rem;
+  padding: clamp(1rem, 3cqw, 2rem) 20px;
+  margin-bottom: 1rem;
 }
 .top-navigation .left {
   display: flex;
   align-items: center;
-  font-size: clamp(32px, 50%, 50vw);
-}
-.top-navigation .right {
+  font-size: clamp(1.5rem, 3cqw, 2rem);
 }
 .top-navigation .right ul {
   display: flex;
