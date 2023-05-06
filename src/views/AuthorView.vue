@@ -26,6 +26,7 @@ watch(
   <main class="columns" style="--page: author">
     <ColumnItem>
       <Author :data="author" :style="`--horizontal: true`" v-if="author" />
+      <h3>Latest articles from the author</h3>
       <Article
         v-for="(article, index) in authorArticles"
         :data="article"
@@ -45,3 +46,10 @@ watch(
     </ColumnItem>
   </main>
 </template>
+<style>
+h3::after {
+  content: '';
+  margin-bottom: var(--gap);
+  display: block;
+}
+</style>
