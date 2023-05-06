@@ -5,11 +5,22 @@ import Author, { type AuthorData } from '@/components/AuthorItem.vue'
 import articles from '@/data/articles.json'
 import authors from '@/data/authors.json'
 import { useRoute } from 'vue-router'
+import { ref, watch } from 'vue'
 
 const router = useRoute()
-const rightColumnArticles = articles.filter((article) => article.column === 3)
-const author = authors.find((author) => author.id.toString() === router.params.id)
-const authorArticles = articles.filter((article) => article.author.id === author!.id)
+const rightColumnArticles = ref()
+const author = ref()
+const authorArticles = ref()
+
+watch(
+  router,
+  () => {
+    rightColumnArticles.value = articles.filter((article) => article.column === 3)
+    author.value = authors.find((author) => author.id.toString() === router.params.id)
+    authorArticles.value = articles.filter((article) => article.author.id === author.value.id)
+  },
+  { immediate: true }
+)
 </script>
 <template>
   <main class="columns" style="--page: author">
