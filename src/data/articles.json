@@ -7,6 +7,7 @@
       "name": "Jason Cook",
       "id": 2
     },
+    "tags": ["featured", "cooking", "pasta"],
     "slug": "slasher-italian-pasta-dishes",
     "featured": false,
     "column": 2,
@@ -22,6 +23,7 @@
       "name": "Mason Hook",
       "id": 1
     },
+    "tags": ["featured", "cooking", "pasta"],
     "slug": "italian-noodle-dishes",
     "featured": false,
     "column": 2,
@@ -38,6 +40,7 @@
       "name": "Mason Hook",
       "id": 1
     },
+    "tags": ["featured", "cooking", "pasta"],
     "slug": "chinese-pasta-dishes",
     "featured": true,
     "column": 1
@@ -50,6 +53,7 @@
       "name": "Mason Hook",
       "id": 1
     },
+    "tags": ["featured", "cooking", "pasta"],
     "slug": "roasted-meat-dishes",
     "featured": false,
     "column": 1,
@@ -66,6 +70,7 @@
       "name": "Mason Hook",
       "id": 1
     },
+    "tags": ["featured", "cooking", "pasta"],
     "slug": "serbian-dishes",
     "featured": false,
     "column": 3,
@@ -82,6 +87,7 @@
       "name": "Mason Hook",
       "id": 1
     },
+    "tags": ["featured", "cooking", "pasta"],
     "slug": "savory-pasta-dishes",
     "featured": false,
     "column": 3,

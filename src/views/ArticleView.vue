@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import ColumnItem from '@/components/ColumnItem.vue'
-import Article, { type ArticleData } from '@/components/Article.vue'
+import ArticleCard, { type ArticleData } from '@/components/ArticleCard.vue'
 import articles from '@/data/articles.json'
 import { useRoute } from 'vue-router'
 import { ref, watch } from 'vue'
+import Article from '@/components/Article.vue'
 
 const router = useRoute()
 const rightColumnArticles = ref()
@@ -19,12 +20,12 @@ watch(
 )
 </script>
 <template>
-  <main class="columns" style="--page: article">
+  <main class="columns">
     <ColumnItem>
-      <Article :data="mainArticle" style="" v-if="mainArticle" />
+      <Article :data="mainArticle" />
     </ColumnItem>
     <ColumnItem>
-      <Article
+      <ArticleCard
         v-for="(article, index) in rightColumnArticles"
         :data="article"
         :style="`${index < 1 ? '--compact: 2' : ''}; --horizontal: ${

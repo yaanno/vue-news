@@ -1,37 +1,37 @@
 <script setup lang="ts">
-import type { StyleValue } from 'vue'
-defineProps<{ style: StyleValue; data: ArticleData }>()
-export interface ArticleData {
-  thumbnail: string
-  title: string
-  teaser: string
-  author: {
-    name: string
-    id: number
-  }
-  slug: string
-}
+import type { ArticleData } from './ArticleCard.vue'
+import Tag from './Tag.vue'
+
+defineProps<{ data: ArticleData }>()
 </script>
 <template>
-  <div class="article__item" :style="style">
-    <article class="card u-flow">
-      <div class="card__thumb">
-        <img :src="data.thumbnail" alt="" />
-      </div>
-      <div class="card__content u-flow">
-        <h3 class="card__title">
-          <router-link :to="{ name: 'article', params: { slug: data.slug } }">{{
-            data.title
-          }}</router-link>
-        </h3>
-        <p class="card__tease">{{ data.teaser }}</p>
-        <p class="card__meta">
-          By
-          <router-link :to="{ name: 'author', params: { id: data.author.id } }">{{
-            data.author.name
-          }}</router-link>
-        </p>
-      </div>
-    </article>
-  </div>
+  <article class="article">
+    <header class="article__headline">
+      <h1>{{ data.title }}</h1>
+      <router-link :to="{ name: 'author', params: { id: data.author.id } }">{{
+        data.author.name
+      }}</router-link>
+    </header>
+    <main class="article__content">
+      <p>{{ data.teaser }}</p>
+      <figure class="article__illustration">
+        <picture>
+          <img :src="data.thumbnail" alt="Illustration" />
+        </picture>
+        <figcaption>Illustration</figcaption>
+      </figure>
+
+      <p>{{ data.teaser }}</p>
+    </main>
+    <footer class="article__tags">
+      <Tag :tag="tag" v-for="tag in data.tags" v-if="data.tags" />
+    </footer>
+  </article>
 </template>
+<style>
+.article__tags {
+  display: flex;
+  gap: 1rem;
+  padding-block: 0.5rem;
+}
+</style>

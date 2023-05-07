@@ -1,4 +1,4 @@
-import Article from './Article.vue'
+import Article from './ArticleCard.vue'
 import articles from '@/data/articles.json'
 
 describe('<Article />', () => {

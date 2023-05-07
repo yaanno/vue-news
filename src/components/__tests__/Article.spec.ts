@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import Article from '@/components/Article.vue'
+import Article from '@/components/ArticleCard.vue'
 import articles from '@/data/articles.json'
 
 describe('Article', () => {

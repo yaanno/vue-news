@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ColumnItem from '@/components/ColumnItem.vue'
-import Article, { type ArticleData } from '@/components/Article.vue'
+import Article, { type ArticleData } from '@/components/ArticleCard.vue'
 import Author, { type AuthorData } from '@/components/AuthorItem.vue'
 import articles from '@/data/articles.json'
 import authors from '@/data/authors.json'

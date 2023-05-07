@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Article, { type ArticleData } from './Article.vue'
+import Article, { type ArticleData } from './ArticleCard.vue'
 import ColumnItem from './ColumnItem.vue'
 import articles from '@/data/articles.json'
 
