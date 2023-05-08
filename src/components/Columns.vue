@@ -2,15 +2,16 @@
 import Article, { type ArticleData } from './ArticleCard.vue'
 import ColumnItem from './ColumnItem.vue'
 import articles from '@/data/articles.json'
+import RecommendedArticles from './RecommendedArticles.vue'
 
-const featuredColumnArticles = articles.filter((article) => article.featured)
-const leftColumnArticles = articles.filter((article) => article.latest)
-const rightColumnArticles = articles.filter((article) => article.recommended)
+const featuredArticles = articles.filter((article) => article.featured)
+const latestArticles = articles.filter((article) => article.latest)
+const recommendedArticles = articles.filter((article) => article.recommended)
 </script>
 <template>
   <ColumnItem>
     <Article
-      v-for="(article, index) in featuredColumnArticles"
+      v-for="(article, index) in featuredArticles"
       :data="article"
       :style="`${index < 1 ? '--featured: true' : ''}; --horizontal: true; ${
         index > 0 ? '--flipped: true' : ''
@@ -19,8 +20,11 @@ const rightColumnArticles = articles.filter((article) => article.recommended)
     />
   </ColumnItem>
   <ColumnItem>
+    <template #headline>
+      <h3>Latest</h3>
+    </template>
     <Article
-      v-for="(article, index) in leftColumnArticles"
+      v-for="(article, index) in latestArticles"
       :data="article"
       :style="`${index < 1 ? '--compact: 2' : ''}; --horizontal: true; ${
         index > 0 ? '--thumb: mobile-only' : ''
@@ -28,14 +32,6 @@ const rightColumnArticles = articles.filter((article) => article.recommended)
       :key="`${article.slug}-${index}`"
     />
   </ColumnItem>
-  <ColumnItem>
-    <Article
-      v-for="(article, index) in rightColumnArticles"
-      :data="article"
-      :style="`${index < 1 ? '--compact: 2' : ''}; --horizontal: true; ${
-        index > 0 ? '--thumb: mobile-only' : ''
-      };`"
-      :key="`${article.slug}-${index}`"
-    />
-  </ColumnItem>
+
+  <RecommendedArticles :articles="recommendedArticles" />
 </template>
