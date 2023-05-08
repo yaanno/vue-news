@@ -10,10 +10,8 @@
     "tags": ["featured", "cooking", "pasta"],
     "slug": "slasher-italian-pasta-dishes",
     "featured": false,
-    "column": 2,
-    "style": {
-      "horizontal": true
-    }
+    "recommended": true,
+    "latest": true
   },
   {
     "thumbnail": "https://placehold.co/300x225",
@@ -26,11 +24,7 @@
     "tags": ["featured", "cooking", "pasta"],
     "slug": "italian-noodle-dishes",
     "featured": false,
-    "column": 2,
-    "style": {
-      "horizontal": true,
-      "thumb": "mobile-only"
-    }
+    "recommended": true
   },
   {
     "thumbnail": "https://placehold.co/620x370",
@@ -42,8 +36,7 @@
     },
     "tags": ["featured", "cooking", "pasta"],
     "slug": "chinese-pasta-dishes",
-    "featured": true,
-    "column": 1
+    "featured": true
   },
   {
     "thumbnail": "https://placehold.co/300x225",
@@ -55,12 +48,8 @@
     },
     "tags": ["featured", "cooking", "pasta"],
     "slug": "roasted-meat-dishes",
-    "featured": false,
-    "column": 1,
-    "style": {
-      "flipped": true,
-      "horizontal": true
-    }
+    "featured": true,
+    "latest": false
   },
   {
     "thumbnail": "https://placehold.co/300x225",
@@ -73,11 +62,7 @@
     "tags": ["featured", "cooking", "pasta"],
     "slug": "serbian-dishes",
     "featured": false,
-    "column": 3,
-    "style": {
-      "horizontal": true,
-      "thumb": "grid-2"
-    }
+    "latest": true
   },
   {
     "thumbnail": "https://placehold.co/300x225",
@@ -90,11 +75,7 @@
     "tags": ["featured", "cooking", "pasta"],
     "slug": "savory-pasta-dishes",
     "featured": false,
-    "column": 3,
-    "style": {
-      "horizontal": true,
-      "thumb": "mobile-only"
-    }
+    "latest": true
   },
   {
     "thumbnail": "https://placehold.co/300x225",
@@ -106,10 +87,17 @@
     },
     "slug": "italian-pasta-dishes",
     "featured": false,
-    "column": 3,
-    "style": {
-      "horizontal": true,
-      "thumb": "mobile-only"
-    }
+    "latest": true
+  },
+  {
+    "thumbnail": "https://placehold.co/300x225",
+    "title": "Russian Pasta Dishes",
+    "teaser": "Discover the best pasta recipes for your next dinner party.",
+    "author": {
+      "name": "Jason Cook",
+      "id": 2
+    },
+    "slug": "russian-pasta-dishes",
+    "featured": true
   }
 ]

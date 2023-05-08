@@ -13,7 +13,7 @@ const mainArticle = ref()
 watch(
   router,
   () => {
-    rightColumnArticles.value = articles.filter((article) => article.column === 3)
+    rightColumnArticles.value = articles.filter((article) => article.recommended)
     mainArticle.value = articles.find((article) => article.slug === router.params.slug)
   },
   { immediate: true }

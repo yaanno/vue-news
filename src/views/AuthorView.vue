@@ -15,7 +15,7 @@ const authorArticles = ref()
 watch(
   router,
   () => {
-    rightColumnArticles.value = articles.filter((article) => article.column === 3)
+    rightColumnArticles.value = articles.filter((article) => article.recommended)
     author.value = authors.find((author) => author.id.toString() === router.params.id)
     authorArticles.value = articles.filter((article) => article.author.id === author.value.id)
   },
