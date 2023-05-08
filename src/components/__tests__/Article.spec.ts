@@ -9,7 +9,7 @@ import { routes } from '@/router'
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: routes,
+  routes: routes
 })
 
 describe('Article', () => {

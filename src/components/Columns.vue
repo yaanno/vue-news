@@ -6,14 +6,15 @@ import articles from '@/data/articles.json'
 const featuredColumnArticles = articles.filter((article) => article.featured)
 const leftColumnArticles = articles.filter((article) => article.latest)
 const rightColumnArticles = articles.filter((article) => article.recommended)
-
 </script>
 <template>
   <ColumnItem>
     <Article
       v-for="(article, index) in featuredColumnArticles"
       :data="article"
-      :style="`${index < 1 ? '--featured: true' : ''}; --horizontal: true; ${index > 0 ? '--flipped: true' : ''};`"
+      :style="`${index < 1 ? '--featured: true' : ''}; --horizontal: true; ${
+        index > 0 ? '--flipped: true' : ''
+      };`"
       :key="`${article.slug}-${index}`"
     />
   </ColumnItem>
@@ -21,7 +22,9 @@ const rightColumnArticles = articles.filter((article) => article.recommended)
     <Article
       v-for="(article, index) in leftColumnArticles"
       :data="article"
-      :style="`${index < 1 ? '--compact: 2' : ''}; --horizontal: true; ${index > 0 ? '--thumb: mobile-only' : ''};`"
+      :style="`${index < 1 ? '--compact: 2' : ''}; --horizontal: true; ${
+        index > 0 ? '--thumb: mobile-only' : ''
+      };`"
       :key="`${article.slug}-${index}`"
     />
   </ColumnItem>
@@ -29,7 +32,9 @@ const rightColumnArticles = articles.filter((article) => article.recommended)
     <Article
       v-for="(article, index) in rightColumnArticles"
       :data="article"
-      :style="`${index < 1 ? '--compact: 2' : ''}; --horizontal: true; ${index > 0 ? '--thumb: mobile-only' : ''};`"
+      :style="`${index < 1 ? '--compact: 2' : ''}; --horizontal: true; ${
+        index > 0 ? '--thumb: mobile-only' : ''
+      };`"
       :key="`${article.slug}-${index}`"
     />
   </ColumnItem>
