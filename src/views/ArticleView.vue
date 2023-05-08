@@ -20,7 +20,7 @@ watch(
 )
 </script>
 <template>
-  <main class="columns">
+  <main class="columns" style="--cols: 2">
     <ColumnItem>
       <Article :data="mainArticle" />
     </ColumnItem>

@@ -23,7 +23,7 @@ watch(
 )
 </script>
 <template>
-  <main class="columns" style="--page: author">
+  <main class="columns" style="--cols: 2">
     <ColumnItem>
       <Author :data="author" :style="`--horizontal: true`" v-if="author" />
       <h3>Latest articles from the author</h3>
