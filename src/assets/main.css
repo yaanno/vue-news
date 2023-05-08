@@ -123,9 +123,6 @@
 .card__thumb {
   flex: 0 0 30%;
 }
-/* .card__thumb img {
-  width: 100%;
-} */
 
 .card__content {
   --flow-space: 0.25rem;
